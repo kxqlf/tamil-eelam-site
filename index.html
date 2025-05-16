@@ -3,93 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tamil Eelam</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      background-color: #f4f4f4;
-      color: #2b2d31;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #2b2d31;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      margin-bottom: 1rem;
-      color: #2b2d31;
-    }
-    footer {
-      background-color: #2b2d31;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 1rem;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-    }
-  </style>
+  <title>Tamil Eelam - Accueil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Tamil Eelam</h1>
-    <p>Un hommage à l'histoire, la culture et le peuple tamoul</p>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="conflit.html">Le conflit</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="avis.html">Avis</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Histoire</h2>
-    <p>Le Tamil Eelam est une revendication d'un État indépendant pour le peuple tamoul au Sri Lanka. Ce mouvement s'est renforcé au cours du XXe siècle, en particulier durant la guerre civile qui a duré plus de 25 ans.</p>
-  </section>
-
-  <section>
-    <h2>Culture</h2>
-    <ul>
-      <li>Langue : Tamoul</li>
-      <li>Musique traditionnelle et cinéma tamoul</li>
-      <li>Religion majoritairement hindoue</li>
-    </ul>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tamil_Eelam_Flag.svg/800px-Tamil_Eelam_Flag.svg.png" alt="Drapeau du Tamil Eelam">
-  </section>
-
-  <section>
-    <h2>Cartes & Drapeaux</h2>
-    <p>Voici une représentation du territoire revendiqué par le Tamil Eelam :</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sri_Lanka_Northern_and_Eastern_provinces_locator_map.svg/800px-Sri_Lanka_Northern_and_Eastern_provinces_locator_map.svg.png" alt="Carte du Tamil Eelam">
-  </section>
-
-  <section>
-    <h2>Ressources</h2>
-    <ul>
-      <li><a href="https://fr.wikipedia.org/wiki/Tamil_Eelam" target="_blank">Article Wikipédia sur le Tamil Eelam</a></li>
-      <li><a href="https://www.tamilnet.com/" target="_blank">TamilNet - Nouvelles tamoules</a></li>
-    </ul>
+  <section class="hero">
+    <div class="overlay">
+      <h2>Un peuple, une lutte</h2>
+      <p>Découvrez l’histoire du peuple tamoul et la guerre pour l’indépendance du Tamil Eelam.</p>
+      <a href="conflit.html" class="btn">En savoir plus</a>
+    </div>
   </section>
 
   <footer>
-    <p>Site éducatif créé pour découvrir le Tamil Eelam. &copy; 2025</p>
+    <p>&copy; 2025 Tamil Eelam. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
