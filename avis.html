@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tamil Eelam - Avis</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2b2d31;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #2b2d31;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .avis-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+
+    .avis-form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #2b2d31;
+    }
+
+    .avis-form input[type="text"],
+    .avis-form textarea,
+    .avis-form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    .avis-form textarea {
+      min-height: 100px;
+    }
+
+    .avis-form button {
+      background-color: #e63946;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 7px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .avis-form button:hover {
+      background-color: #d62839;
+    }
+
+    .avis-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .avis-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px;
+    }
+
+    .avis-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .avis-card-username {
+      font-weight: 700;
+      color: #2b2d31;
+      font-size: 1.1rem;
+    }
+
+    .avis-card-rating {
+      color: #e63946;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .avis-card-text {
+      font-style: italic;
+      color: #555;
+      flex-grow: 1;
+    }
+
+    footer {
+      background-color: #2b2d31;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .avis-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tamil Eelam</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="conflit.html">Le conflit</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="avis.html">Avis</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Vos avis</h2>
+    <p class="intro">Partagez vos impressions, suggestions et notes pour améliorer ce site dédié au Tamil Eelam.</p>
+
+    <section class="avis-form">
+      <form id="avisForm">
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" required />
+
+        <label for="note">Note</label>
+        <select id="note" name="note" required>
+          <option value="">Sélectionnez une note</option>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+        </select>
+
+        <label for="commentaire">Votre avis</label>
+        <textarea id="commentaire" name="commentaire" placeholder="Votre message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section class="avis-list" aria-label="Liste des avis">
+      <!-- Les avis apparaîtront ici -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tamil Eelam. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

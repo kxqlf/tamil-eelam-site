@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le conflit - Tamil Eelam</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('../images/conflit-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    header,
+    main,
+    footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #2b2d31;
+      color: #ffffff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #f0f0f0;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #e63946;
+      border-radius: 10px;
+      width: 280px;
+      padding: 1.5rem;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      color: #ffffff;
+      text-align: left;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      background-color: #d62839;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #2b2d31;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tamil Eelam</h1>
+    <nav>
+      <a href="../index.html">Accueil</a>
+      <a href="index.html" class="active">Le conflit</a>
+      <a href="../videos.html">Vidéos</a>
+      <a href="../avis.html">Avis</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Le conflit du Tamil Eelam</h2>
+    <p class="intro">
+      Une lutte longue et complexe pour l’autodétermination du peuple tamoul au Sri Lanka. Découvrez les différentes phases et enjeux majeurs de ce conflit historique.
+    </p>
+
+    <div class="cards">
+      <a href="origines.html" class="card">
+        <h3>Les origines</h3>
+        <p>Découvrez les racines historiques et politiques qui ont mené à ce conflit ethnique et territorial.</p>
+      </a>
+      <a href="guerre.html" class="card">
+        <h3>La guerre civile</h3>
+        <p>Un aperçu des différentes phases de la guerre civile, des acteurs impliqués et des combats marquants.</p>
+      </a>
+      <a href="consequences.html" class="card">
+        <h3>Conséquences</h3>
+        <p>Analyse des impacts humains, sociaux et politiques, ainsi que des efforts de réconciliation.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tamil Eelam. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
